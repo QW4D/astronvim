@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -82,4 +81,19 @@ return {
       )
     end,
   },
+
+  {
+  'mrcjkb/rustaceanvim',
+  version = '^5', -- Recommended
+  lazy = false, -- This plugin is already lazy
+  },
+  {
+   "nvim-neo-tree/neo-tree.nvim",
+   opts = {
+      window = {
+         position = "right",
+      },
+   },
 }
+ 
+  }
