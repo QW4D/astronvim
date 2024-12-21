@@ -88,18 +88,6 @@ return {
   lazy = false, -- This plugin is already lazy
   },
   {
-   "nvim-neo-tree/neo-tree.nvim",
-   opts = {
-      window = {
-         position = "right",
-      },
-      filesystem = {
-        filtered_items = {
-          visible = true
-        }
-      }
-  },
-  {
   "mfussenegger/nvim-dap"
   },
   {
@@ -108,11 +96,9 @@ return {
   dependencies = {
         "mfussenegger/nvim-dap"
   },
-  config = function(_, opts)
+  config = function(_)
         local path = "python"
         require("dap-python").setup(path)
   end,
-  }, 
+  },
 }
- 
-  }
